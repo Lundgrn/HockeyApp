@@ -10,14 +10,14 @@ namespace HockeyApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            startCrawlerasync();
-            Console.ReadLine();
+            await StartCrawlerasync();
+            Console.WriteLine("{ Day}, { Month}");
 
         }
 
-        private static async Task startCrawlerasync()   
+        private static async Task StartCrawlerasync()
         {
             var url = "https://www.difhockey.se/";
             var httpClient = new HttpClient();

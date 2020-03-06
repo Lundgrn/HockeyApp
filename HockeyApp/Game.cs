@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HockeyApp
 {
-    [DebuggerDisplay("{Day}, {WeekDay}, {Month}")]
+    [DebuggerDisplay("{Day}, {Month}")]
     class Game       
     {
         public string Month { get; set; }
